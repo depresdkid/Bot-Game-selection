@@ -39,11 +39,53 @@ button {
 }
 
 .game-table-row {
-    padding: 12px 20px;
+    padding: 12px 22px;
+}
+
+.game-card {
+    position: relative;
+    border: none;
     background: #3f3f3f;
     border-radius: 8px;
-    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    padding: 12px;
+    padding-left: 27px;
+}
+
+.game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    background: linear-gradient(34deg, rgba(156,116,242,1) 29%, rgba(119,98,255,1) 77%);
+}
+
+.game-card.top::before {
+    background: linear-gradient(34deg, rgba(118, 97, 254, 1) 29%, rgba(249, 101, 145, 1) 77%);
+}
+
+
+.delete-btn {
+    width: 34px;
+    margin: 6px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.like-btn {
+    display: flex;
+    gap: 12px;
+    margin: 7px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .game-table__col {
@@ -65,14 +107,13 @@ button {
     font-weight: bold;
 }
 
-.game-table__col.add,
-.game-table__col.delete,
-.game-table__col.like {
-    justify-content: end;
-}
 
 .game-table__col.like {
     gap: 6px;
+}
+
+.game-table__col.like {
+    margin-top: -1px;
 }
 
 .game-table__col-plus,
@@ -85,32 +126,33 @@ button {
     transition: all .2s ease-in;
 }
 
-.game-table__col-plus svg {
+.game-card__plus svg {
     opacity: 0.3;
     fill: #fff;
 }
 
-.game-table__col-plus:hover {
+.game-card__plus:hover {
     animation: size .3s;
 }
 
-.game-table__col-plus:hover svg {
+.game-card__plus:hover svg {
     opacity: 1;
     fill: #e375b5;
     transition: all .2s ease-in;
 }
 
-.game-table__col-like-count {
-    padding-top: 4px;
+.game-card-like__count {
+    color: #fff;
+    padding-top: 5px;
     font-size: 14px;
     font-weight: bold;
 }
 
-.game-table__col-delete svg path {
+.delete-btn svg path {
     opacity: 0.3;
 }
 
-.game-table__col-delete:hover svg path {
+.delete-btn:hover svg path {
     opacity: 1;
     stroke: rgb(247, 104, 104) !important;
 }

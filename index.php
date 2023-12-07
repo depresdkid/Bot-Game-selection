@@ -15,50 +15,169 @@
 
     </header>
     <main>
-        <div class="container" style="max-width: 540px;">
+        <div class="container" style="max-width: 420px;">
             <div class="game-table mt-5">
-                <div class="game-table-row">
-                    <div class="row">
-                        <div class="col-1">
-                            <div class="game-table__col">
-                                <div class="top-number">#1</div>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="game-table__col">
-                                <div class="game-table__col-img"></div>
-                                <div class="game-table__col-title">Minecraft</div>
-                            </div>
-                        </div>
-                        <div class="col-2">
+                <div class="game-card top">
+                    <button class="delete-btn">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 5L5 19M5.00001 5L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="like-btn">
+                        <div>
                             <div class="game-table__col like">
                                 <div class="game-table__col-like">
-                                    <img width="26px" src="/assets/images/like.png" alt="">
+                                    <img width="23px" src="/assets/images/like.png" alt="">
                                 </div>
-                                <div class="game-table__col-like-count">12</div>
+                                <div class="game-card-like__count">12</div>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <div class="game-table__col add">
-                                <button>
-                                    <div class="game-table__col-plus">
-                                        <svg width="26px" height="26px" viewBox="0 0 1024 1024" class="plus-icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" />
-                                        </svg>
-                                    </div>
-                                </button>
+                        <div class="game-card__plus">
+                            <svg width="23px" height="23px" viewBox="0 0 1024 1024" class="plus-icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>Minecraft</div>
+                            <div>Песочница</div>
+                            <div>Кол-во игроков: 4+</div>
+                        </div>
+                        <div class="col-6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <button class="delete-btn">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 5L5 19M5.00001 5L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="like-btn">
+                        <div>
+                            <div class="game-table__col like">
+                                <div class="game-table__col-like">
+                                    <img width="23px" src="/assets/images/like.png" alt="">
+                                </div>
+                                <div class="game-card-like__count">12</div>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <div class="game-table__col delete">
-                                <button>
-                                    <div class="game-table__col-delete">
-                                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 5L5 19M5.00001 5L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </button>
+                        <div class="game-card__plus">
+                            <svg width="23px" height="23px" viewBox="0 0 1024 1024" class="plus-icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>Minecraft</div>
+                            <div>Песочница</div>
+                            <div>Кол-во игроков: 4+</div>
+                        </div>
+                        <div class="col-6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <button class="delete-btn">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 5L5 19M5.00001 5L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="like-btn">
+                        <div>
+                            <div class="game-table__col like">
+                                <div class="game-table__col-like">
+                                    <img width="23px" src="/assets/images/like.png" alt="">
+                                </div>
+                                <div class="game-card-like__count">12</div>
                             </div>
+                        </div>
+                        <div class="game-card__plus">
+                            <svg width="23px" height="23px" viewBox="0 0 1024 1024" class="plus-icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>Minecraft</div>
+                            <div>Песочница</div>
+                            <div>Кол-во игроков: 4+</div>
+                        </div>
+                        <div class="col-6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <button class="delete-btn">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 5L5 19M5.00001 5L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="like-btn">
+                        <div>
+                            <div class="game-table__col like">
+                                <div class="game-table__col-like">
+                                    <img width="23px" src="/assets/images/like.png" alt="">
+                                </div>
+                                <div class="game-card-like__count">12</div>
+                            </div>
+                        </div>
+                        <div class="game-card__plus">
+                            <svg width="23px" height="23px" viewBox="0 0 1024 1024" class="plus-icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>Minecraft</div>
+                            <div>Песочница</div>
+                            <div>Кол-во игроков: 4+</div>
+                        </div>
+                        <div class="col-6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <button class="delete-btn">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 5L5 19M5.00001 5L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="like-btn">
+                        <div>
+                            <div class="game-table__col like">
+                                <div class="game-table__col-like">
+                                    <img width="23px" src="/assets/images/like.png" alt="">
+                                </div>
+                                <div class="game-card-like__count">12</div>
+                            </div>
+                        </div>
+                        <div class="game-card__plus">
+                            <svg width="23px" height="23px" viewBox="0 0 1024 1024" class="plus-icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>Minecraft</div>
+                            <div>Песочница</div>
+                            <div>Кол-во игроков: 4+</div>
+                        </div>
+                        <div class="col-6">
+
                         </div>
                     </div>
                 </div>
@@ -69,7 +188,7 @@
         </div>
     </main>
     <footer>
-        <div class="container" style="max-width: 540px;">
+        <div class="container" style="max-width: 420px;">
             <div class="footer">
                 <div class="footer-date">
                     <div>Последнее обновление</div>
