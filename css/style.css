@@ -38,12 +38,17 @@ button {
     opacity: 0.8;
 }
 
+.game-table{
+    overflow: hidden;
+}
+
 .game-table-row {
     padding: 12px 22px;
 }
 
 .game-card {
     position: relative;
+    max-height: 300px;
     border: none;
     background: #3f3f3f;
     border-radius: 8px;
@@ -51,6 +56,7 @@ button {
     margin-bottom: 20px;
     padding: 12px;
     padding-left: 27px;
+    transition: all .3s ease-in;
 }
 
 .game-card::before {
@@ -61,7 +67,7 @@ button {
     width: 15px;
     height: 100%;
     border-radius: 8px 0 0 8px;
-    background: linear-gradient(34deg, rgba(156,116,242,1) 29%, rgba(119,98,255,1) 77%);
+    background: linear-gradient(34deg, rgba(156, 116, 242, 1) 29%, rgba(119, 98, 255, 1) 77%);
 }
 
 .game-card.top::before {
@@ -131,11 +137,11 @@ button {
     fill: #fff;
 }
 
-.game-card__plus:hover {
+.game-card__plus.active {
     animation: size .3s;
 }
 
-.game-card__plus:hover svg {
+.game-card__plus.active svg {
     opacity: 1;
     fill: #e375b5;
     transition: all .2s ease-in;
