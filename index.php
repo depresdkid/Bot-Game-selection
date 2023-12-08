@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,6 +16,8 @@
 
     <main>
         <div class="container" style="max-width: 420px;">
+
+
             <div class="game-table mt-5">
                 <?php for ($i = 1; $i <= 5; $i++) { ?>
                     <div class="game-card <?php echo $i == 1 ? 'top' : ''; ?> animate__animated">
@@ -59,6 +62,7 @@
     </main>
     <footer>
         <div class="container" style="max-width: 420px;">
+
             <div class="footer">
                 <div class="footer-date">
                     <div>Последнее обновление</div>
@@ -77,15 +81,61 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-title">Добавить игру</div>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-inputs">
+                        <input id="name" type="text" class="form-input" placeholder=" ">
+                        <label for="name">Название игры</label>
+                    </div>
+
+                    <div class="modal-inputs">
+                        <select name="" multiple="multiple" id="categories" class="select">
+                            <option></option>
+                            <option value="1">Песочница</option>
+                            <option value="2">Хорор</option>
+                            <option value="2">Шутер</option>
+                            <option value="2">Луттинг</option>
+                            <option value="2">Луттинг</option>
+                            <option value="2">Луттинг</option>
+                            <option value="2">Луттинг</option>
+                            <option value="2">Луттинг</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-inputs">
+
+                        <div class="radio-text">Кол-во игроков</div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1">1</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">2</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">3</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-4" type="radio" name="radio" value="4">
+                            <label for="radio-4">4</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-5" type="radio" name="radio" value="5">
+                            <label for="radio-5">4+</label>
+                        </div>
+                    </div>
+
+                    <div class="modal-inputs">
+                        <button class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#exampleModal">Добавить</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,6 +145,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/select2.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

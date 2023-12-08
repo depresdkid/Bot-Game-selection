@@ -19,6 +19,29 @@ button {
     background: none;
 }
 
+input {
+    width: 100%;
+    border: 1px #797979 solid;
+    background: #242424;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    width: max-content;
+    padding: 4px;
+    border-radius: 8px;
+    background: #242424;
+    transition: transform 200ms, color 200ms;
+}
+
+::placeholder {
+    color: #787676;
+    font-size: 15px;
+}
+
 .btn {
     border: none;
     border-radius: 12px;
@@ -38,7 +61,7 @@ button {
     opacity: 0.8;
 }
 
-.game-table{
+.game-table {
     overflow: hidden;
 }
 
@@ -197,4 +220,153 @@ button {
     justify-content: space-between;
     font-size: 14px;
     opacity: 0.3;
+}
+
+.modal-content {
+    background: #242424 !important;
+    padding: 12px;
+}
+
+.modal-header {
+    padding: 0;
+    border: none;
+    margin-bottom: 28px;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-inputs {
+    margin-bottom: 26px;
+    display: contents;
+}
+
+.modal-inputs input[type=text]+label {
+    color: #787676;
+    font-size: 14px;
+    transform: translateY(-34px) translateX(8px);
+}
+
+.modal-inputs input[type=text]:focus+label,
+.modal-inputs input[type=text]:not(:placeholder-shown)+label {
+    transform: translateY(-56px) translateX(8px);
+    font-weight: bold;
+    color: #fff;
+}
+
+.radio-text{
+    margin-bottom: 14px;
+    color: #797979;
+}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 26px;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #797979;
+    border-radius: 10px;
+    color: #787676;
+    user-select: none;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.form_radio_btn input[type=radio]:checked+label {
+    color: #fff;
+    background: #3f3f3f;
+}
+
+.form_radio_btn label:hover {
+    color: #666;
+}
+
+.form_radio_btn input[type=radio]:disabled+label {
+    background: #efefef;
+    color: #666;
+}
+
+.select2 {
+    width: 100% !important;
+    margin-bottom: 26px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px #797979 solid;
+    background: #242424;
+    border-radius: 8px;
+    padding: 6px 12px;
+    width: 100%;
+    color: #fff;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px #797979 solid;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 22px;
+    padding: 0;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    height: 23px;
+    margin: 0;
+}
+
+.select2-dropdown {
+    border-radius: 8px;
+    background: #242424;
+    z-index: 10000;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background: linear-gradient(34deg, rgba(118, 97, 254, 1) 29%, rgba(249, 101, 145, 1) 77%);
+}
+
+.select2-container--default .select2-results__option--selected {
+    background: #3f3f3f;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 0px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    height: 100%;
+    padding: 0px 6px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: #3f3f3f;
+    border: none;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    color: #fff;
 }

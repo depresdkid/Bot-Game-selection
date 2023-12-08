@@ -13,6 +13,11 @@ $(document).ready(function () {
 		})
 	})
 
+	$('.select').select2({
+		placeholder: "Жанры",
+		minimumResultsForSearch: -1,
+		tags: true,
+	})
 
 });
 
