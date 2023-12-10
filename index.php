@@ -1,3 +1,5 @@
+<?php error_reporting(0);
+ini_set('display_errors', false); ?>
 <!DOCTYPE html>
 <html lang="en">
 

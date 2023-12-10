@@ -260,7 +260,12 @@ label {
     color: #fff;
 }
 
-.radio-text{
+
+.modal {
+    background: #0c0c0cd6;
+}
+
+.radio-text {
     margin-bottom: 14px;
     color: #797979;
 }
