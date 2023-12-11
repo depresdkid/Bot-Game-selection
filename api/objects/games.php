@@ -28,6 +28,37 @@ class Games
 
     public function add()
     {
-        $query = 'INSERT INTO `' . $this->table . '` SET ';
+        $query = 'INSERT INTO `' . $this->table . '` SET name=:name, date=:date, ganre_id=:ganre_id, votes=:votes, players:=players, author:=author';
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->bindParam(":name", htmlentities($this->name, ENT_QUOTES, 'UTF-8'));
+        $stmt->bindParam(":date", htmlentities($this->date, ENT_QUOTES, 'UTF-8'));
+        $stmt->bindParam(":ganre_id", htmlentities($this->ganre_id, ENT_QUOTES, 'UTF-8'));
+        $stmt->bindParam(":votes", htmlentities($this->votes, ENT_QUOTES, 'UTF-8'));
+        $stmt->bindParam(":players", htmlentities($this->players, ENT_QUOTES, 'UTF-8'));
+        $stmt->bindParam(":author", htmlentities($this->author, ENT_QUOTES, 'UTF-8'));
+
+        if (!$stmt->execute()) {
+            return false;
+        }
+        return true;
+    }
+
+    public function update()
+    {
+        return true;
+    }
+
+    public function delete()
+    {
+        $query = "DELETE FROM " . $this->table . " WHERE id = ?";
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->bindParam(1, htmlentities($this->id, ENT_QUOTES, 'UTF-8'));
+
+        if (!$stmt->execute()) {
+            return false;
+        }
+        return true;
     }
 }

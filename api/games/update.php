@@ -15,10 +15,7 @@ $game = new Games($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
-if (!empty($data->name) && empty($data->price) && empty($data->description) && empty($data->category_id)) {
-    http_response_code(400);
-    echo json_encode(array("message" => "Невозможно добавить игру, Данные неполные"), JSON_UNESCAPED_UNICODE);
-}
+$game->id = $data->id;
 
 $game->name = $data->name;
 $game->date = $data->date;
@@ -27,11 +24,11 @@ $game->votes = $data->votes;
 $game->players = $data->players;
 $game->author = $data->author;
 
-if (!$game->add()) {
+if (!$game->update()) {
     http_response_code(503);
-    echo json_encode(array("message" => "Невозможно добавить игру."), JSON_UNESCAPED_UNICODE);
+    echo json_encode(array("message" => "Невозможно обновить игру."), JSON_UNESCAPED_UNICODE);
 }
 
 http_response_code(201);
 
-echo json_encode(array("message" => "Игра была добавлена."), JSON_UNESCAPED_UNICODE);
+echo json_encode(array("message" => "Игра обновлена"), JSON_UNESCAPED_UNICODE);
